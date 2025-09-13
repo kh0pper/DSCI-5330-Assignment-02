@@ -1,0 +1,33 @@
+title: Ford Motor Company Financial Analysis
+description: Strategic Transformation Analysis (2015-2024) - DSCI-5330 Assignment 02
+theme: jekyll-theme-minimal
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# GitHub Pages settings
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+- jekyll-remote-theme
+
+# Site settings
+author: Financial Analysis Team
+email: kh0pper@github.com
+baseurl: ""
+url: "https://kh0pper.github.io"
+
+# Build settings
+kramdown:
+  input: GFM
+  hard_wrap: false
+  
+# Exclude files
+exclude:
+  - venv/
+  - "*.py"
+  - "*.xlsx"
+  - "*.docx"
+  - README.md
+  - CLAUDE.md
