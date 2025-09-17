@@ -15,7 +15,7 @@
             font-family: 'Georgia', 'Times New Roman', serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f8f9fa;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         }
 
         .container {
@@ -28,16 +28,28 @@
 
         .header {
             text-align: center;
-            border-bottom: 3px solid #0066cc;
-            padding-bottom: 20px;
+            background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+            color: white;
+            padding: 30px 20px;
             margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,51,102,0.3);
+        }
+
+        .ford-logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+            filter: brightness(0) invert(1);
         }
 
         .memo-header {
-            background-color: #f0f4f8;
+            background: linear-gradient(135deg, #f0f4f8 0%, #e3f2fd 100%);
             padding: 20px;
-            border-left: 5px solid #0066cc;
+            border-left: 5px solid #003366;
             margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,51,102,0.1);
         }
 
         .memo-header table {
@@ -51,27 +63,32 @@
         }
 
         h1 {
-            color: #0066cc;
+            color: white;
             font-size: 2.5em;
             margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
         h2 {
-            color: #0066cc;
+            color: #003366;
             font-size: 1.8em;
             margin: 30px 0 15px 0;
-            border-bottom: 2px solid #0066cc;
-            padding-bottom: 5px;
+            border-bottom: 3px solid #003366;
+            padding-bottom: 8px;
+            background: linear-gradient(90deg, rgba(0,51,102,0.1) 0%, transparent 100%);
+            padding-left: 15px;
+            border-radius: 5px;
         }
 
         h3 {
-            color: #004499;
+            color: #003366;
             font-size: 1.3em;
             margin: 25px 0 10px 0;
+            font-weight: bold;
         }
 
         h4 {
-            color: #004499;
+            color: #003366;
             font-size: 1.1em;
             margin: 20px 0 10px 0;
             font-weight: bold;
@@ -114,7 +131,7 @@
         }
 
         th {
-            background-color: #0066cc;
+            background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
             color: white;
             font-weight: bold;
             text-align: center;
@@ -129,10 +146,12 @@
         }
 
         .highlight-box {
-            background-color: #e3f2fd;
-            border-left: 5px solid #0066cc;
+            background: linear-gradient(135deg, #e3f2fd 0%, #f0f8ff 100%);
+            border-left: 5px solid #003366;
             padding: 15px;
             margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,51,102,0.1);
         }
 
         .phase-analysis {
@@ -150,10 +169,12 @@
         }
 
         .key-finding {
-            background-color: #ffeaa7;
-            border-left: 5px solid #fdcb6e;
+            background: linear-gradient(135deg, #fff3e0 0%, #ffeaa7 100%);
+            border-left: 5px solid #003366;
             padding: 15px;
             margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,51,102,0.1);
         }
 
         ul, ol {
@@ -166,11 +187,12 @@
         }
 
         .conclusion {
-            background-color: #f0f4f8;
+            background: linear-gradient(135deg, #f0f4f8 0%, #e3f2fd 100%);
             padding: 25px;
-            border-radius: 8px;
-            border: 2px solid #0066cc;
+            border-radius: 12px;
+            border: 3px solid #003366;
             margin: 30px 0;
+            box-shadow: 0 4px 15px rgba(0,51,102,0.2);
         }
 
         .signature {
@@ -207,8 +229,10 @@
 <body>
     <div class="container">
         <div class="header">
+            <img src="Ford_Motor_Company_Logo.png" alt="Ford Motor Company Logo" class="ford-logo">
             <h1>Ford Motor Company</h1>
-            <p style="font-size: 1.2em; color: #666;">Strategic Transformation Analysis (2015-2024)</p>
+            <p style="font-size: 1.2em; color: rgba(255,255,255,0.9); margin-top: 10px;">A Decade of Financial Evolution</p>
+            <p style="font-size: 1.0em; color: rgba(255,255,255,0.8);">Strategic Transformation Analysis (2015-2024)</p>
         </div>
 
         <div class="memo-header">
@@ -289,9 +313,11 @@
 
         <div class="recommendations">
             <h4>Recommendations:</h4>
-            <p><strong>Going forward, trucks, SUVs, and commercial vehicles offer the best margin potential.</strong></p>
-            <p>Software and connected services could provide recurring revenue streams that break the traditional boom-bust cycle.</p>
-            <p><strong>The F-Series and Transit remain crown jewels that command premium pricing.</strong></p>
+            <ul>
+                <li><strong>Going forward, trucks, SUVs, and commercial vehicles offer the best margin potential.</strong></li>
+                <li>Software and connected services could provide recurring revenue streams that break the traditional boom-bust cycle.</li>
+                <li><strong>The F-Series and Transit remain crown jewels that command premium pricing.</strong></li>
+            </ul>
         </div>
 
         <h3>2. Cash Flow & Capital Expenditure</h3>
@@ -337,9 +363,11 @@
 
         <div class="recommendations">
             <h4>Recommendations:</h4>
-            <p>Smart capital allocation remains essential: balance EV investments against profitable traditional platforms.</p>
-            <p><strong>Setting clear milestones for Model e profitability would reassure investors.</strong></p>
-            <p>Achieving an annual free cash flow between $9-11 billion would support both transformation and shareholder returns.</p>
+            <ul>
+                <li>Smart capital allocation remains essential: balance EV investments against profitable traditional platforms.</li>
+                <li><strong>Setting clear milestones for Model e profitability would reassure investors.</strong></li>
+                <li>Achieving an annual free cash flow between $9-11 billion would support both transformation and shareholder returns.</li>
+            </ul>
         </div>
 
         <h3>3. Balance Sheet & Debt Management</h3>
@@ -385,8 +413,10 @@
 
         <div class="recommendations">
             <h4>Recommendations:</h4>
-            <p><strong>Cash reserves above $20 billion help manage cyclical swings and fund the EV transition.</strong></p>
-            <p>Gradually reducing automotive debt while diversifying Ford Credit's funding would strengthen the overall position.</p>
+            <ul>
+                <li><strong>Cash reserves above $20 billion help manage cyclical swings and fund the EV transition.</strong></li>
+                <li>Gradually reducing automotive debt while diversifying Ford Credit's funding would strengthen the overall position.</li>
+            </ul>
         </div>
 
         <h3>4. Liquidity & Leverage Metrics</h3>
@@ -431,9 +461,11 @@
 
         <div class="recommendations">
             <h4>Recommendations:</h4>
-            <p><strong>Faster inventory turnover and tighter receivables collection would help.</strong></p>
-            <p><strong>Pushing the current ratio above 1.2 creates a better safety margin.</strong></p>
-            <p><strong>Ford Credit needs diverse funding to weather rate volatility.</strong></p>
+            <ul>
+                <li><strong>Faster inventory turnover and tighter receivables collection would help.</strong></li>
+                <li><strong>Pushing the current ratio above 1.2 creates a better safety margin.</strong></li>
+                <li><strong>Ford Credit needs diverse funding to weather rate volatility.</strong></li>
+            </ul>
         </div>
 
         <h3>5. Key Risks & Strategic Patterns</h3>
@@ -450,18 +482,22 @@
 
         <div class="recommendations">
             <h4>Recommendations:</h4>
-            <p><strong>Quality control needs strengthening since recall costs regularly dent margins.</strong></p>
-            <p><strong>Fleet customers through Ford Pro offer a smoother path to EV adoption.</strong></p>
-            <p><strong>Battery and charging partnerships would reduce technology risk.</strong></p>
-            <p>Better communication about Ford Credit's role would help investors understand the true leverage picture.</p>
+            <ul>
+                <li><strong>Quality control needs strengthening since recall costs regularly dent margins.</strong></li>
+                <li><strong>Fleet customers through Ford Pro offer a smoother path to EV adoption.</strong></li>
+                <li><strong>Battery and charging partnerships would reduce technology risk.</strong></li>
+                <li>Better communication about Ford Credit's role would help investors understand the true leverage picture.</li>
+            </ul>
         </div>
 
         <h2>INVESTMENT ALTERNATIVES ANALYSIS</h2>
         <div class="key-finding">
             <h4>The Choice Before Us</h4>
             <p><strong>Management faces a decision between two long-term investments:</strong></p>
-            <p><strong>Investment A: $50 million annually for 20 years</strong></p>
-            <p><strong>Investment B: $40 million annually for 12 years</strong></p>
+            <ul>
+                <li><strong>Investment A: $50 million annually for 20 years</strong></li>
+                <li><strong>Investment B: $40 million annually for 12 years</strong></li>
+            </ul>
         </div>
 
         <h3>Running the Numbers</h3>
